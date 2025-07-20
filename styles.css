@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.car-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.car-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+.car-card p {
+    padding: 0 15px 20px;
+    color: #666;
+}
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .car-card h3 {
+        font-size: 1.2rem;
+    }
+}
